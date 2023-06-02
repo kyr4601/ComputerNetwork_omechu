@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="/static/home.css" />
     <title>Document</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="funcs">
-        <form action="">
+        <form action="" method="POST">>
           <p>음식 등록</p>
           <select name="list" id="list">
             <option value="Ko">한식</option>
@@ -30,7 +30,7 @@
             <option value="Us">양식</option>
             <option value="Cn">중식</option>
           </select>
-          <input type="text" placeholder="추가하고 싶은 음식을 입력하세요" />
+          <input type="text" name="name" placeholder="추가하고 싶은 음식을 입력하세요" />
           <input type="submit" value="등록" />
         </form>
         <form action="">
@@ -47,6 +47,6 @@
       </div>
     </div>
 
-    <script src="menu.js"></script>
+    <script src="/static/home.js"></script>
   </body>
 </html>
