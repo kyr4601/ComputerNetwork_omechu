@@ -8,7 +8,7 @@ DB_NAME = "database.db"
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db 파일 경로. website 폴더 안에 생성해주세요' + DB_NAME
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/msi/PycharmProjects/KAU_Computer_Network/delete/website/' + DB_NAME
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
     from website.views import views
