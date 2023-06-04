@@ -8,6 +8,7 @@ views = Blueprint('views', __name__)
 @views.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
+        print(request)
         name = request.form.get('name')
         option = request.form.get('list')
 
