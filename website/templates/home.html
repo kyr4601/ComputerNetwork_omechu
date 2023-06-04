@@ -22,28 +22,30 @@
         </div>
       </div>
       <div class="funcs">
-        <form action="" method="POST">>
-          <p>음식 등록</p>
-          <select name="list" id="list">
-            <option value="Ko">한식</option>
-            <option value="Jp">일식</option>
-            <option value="Us">양식</option>
-            <option value="Cn">중식</option>
-          </select>
-          <input type="text" name="name" placeholder="추가하고 싶은 음식을 입력하세요" />
-          <input type="submit" value="등록" />
-        </form>
-        <form action="">
-          <p>음식 삭제</p>
-          <select name="list" id="list">
-            <option value="Ko">한식</option>
-            <option value="Jp">일식</option>
-            <option value="Us">양식</option>
-            <option value="Cn">중식</option>
-          </select>
-          <input type="text" placeholder="삭제하고 싶은 음식을 입력하세요" />
-          <input type="submit" value="삭제" />
-        </form>
+          <form action="" method="POST">
+              >
+              <p>음식 등록</p>
+              <select name="list" id="list">
+                  <option value="Ko">한식</option>
+                  <option value="Jp">일식</option>
+                  <option value="Us">양식</option>
+                  <option value="Cn">중식</option>
+              </select>
+              <input type="text" name="name" placeholder="추가하고 싶은 음식을 입력하세요" />
+              <input type="submit" value="등록" />
+          </form>
+          <form action="" method="POST">
+              <p>음식 삭제</p>
+              <input type="hidden" name="action" value="삭제" />
+              <select name="list" id="list">
+                  <option value="Ko">한식</option>
+                  <option value="Jp">일식</option>
+                  <option value="Us">양식</option>
+                  <option value="Cn">중식</option>
+              </select>
+              <input type="text" name="name" placeholder="삭제하고 싶은 음식을 입력하세요" />
+              <input type="submit" value="삭제" />
+          </form>
       </div>
     </div>
 
