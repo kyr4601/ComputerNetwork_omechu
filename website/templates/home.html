@@ -33,8 +33,9 @@
           <input type="text" name="name" placeholder="추가하고 싶은 음식을 입력하세요" />
           <input type="submit" value="등록" />
         </form>
-        <form action="">
+        <form action="" method="POST">
           <p>음식 삭제</p>
+          <input type="hidden" name="action" value="삭제" />
           <select name="list" id="list">
             <option value="Ko">한식</option>
             <option value="Jp">일식</option>
