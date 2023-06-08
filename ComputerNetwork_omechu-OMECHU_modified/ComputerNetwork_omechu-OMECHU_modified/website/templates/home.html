@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btns">
+        <button class="btn" id="btn1">한식</button>
+        <button class="btn" id="btn2">일식</button>
+        <button class="btn" id="btn3">양식</button>
+        <button class="btn" id="btn4">중식</button>
+      </div>
+      <div class="res">
+        <h1>--------- 오늘의 메뉴 추천 ---------</h1>
+        <div class="res-box">
+          <p id="food">Loading...</p>
+        </div>
+      </div>
+      <div class="funcs">
+        <form action="" method="POST">
+          <p>음식 등록</p>
+          <input type="hidden" name="action" value="등록" />
+          <select name="list" id="list">
+            <option value="Ko">한식</option>
+            <option value="Jp">일식</option>
+            <option value="Us">양식</option>
+            <option value="Cn">중식</option>
+          </select>
+          <input type="text" name="name" placeholder="추가하고 싶은 음식을 입력하세요" />
+          <input type="submit" value="등록" />
+        </form>
+        <form action="" method="POST">
+          <p>음식 삭제</p>
+          <input type="hidden" name="action" value="삭제" />
+          <select name="list" id="list">
+            <option value="Ko">한식</option>
+            <option value="Jp">일식</option>
+            <option value="Us">양식</option>
+            <option value="Cn">중식</option>
+          </select>
+          <input type="text" name="name" placeholder="삭제하고 싶은 음식을 입력하세요" />
+          <input type="submit" value="삭제" />
+        </form>
+      </div>
+    </div>
+
+    <script src="/static/home.js"></script>
+  </body>
+</html>
