@@ -30,8 +30,9 @@ class Dish(db.Model):
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////ComputerNetwork_omechu-OMECHU_modified/ComputerNetwork_omechu-OMECHU_modified/website/' + DB_NAME
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///c:/Users/Kim YR/OneDrive/바탕 화면/0608/ComputerNetwork_omechu-OMECHU_modified/ComputerNetwork_omechu-OMECHU_modified/website/' + DB_NAME
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+   
 
     db.init_app(app)
     from views import views

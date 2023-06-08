@@ -6,18 +6,57 @@ add3 = document.querySelector('#btn3');
 add4 = document.querySelector('#btn4');
 Container = document.querySelector('.res-box');
 
-add1.addEventListener('click', function(){    
-    food.innerText = '한식!'
+add1.addEventListener('click', function(){   
+    axios("/ko", {
+        method: "get",
+        })
+         .then((response) => {
+          
+          food.innerText = response.data.name;
+          })
+         .catch((error) => {
+           console.log(error);
+         }); 
+  
+       
 })
 
 add2.addEventListener('click', function(){    
-    food.innerText = '일식!'
+    axios("/jp", {
+        method: "get",
+        })
+         .then((response) => {
+          
+          food.innerText = response.data.name;
+          })
+         .catch((error) => {
+           console.log(error);
+         }); 
 })
 
 add3.addEventListener('click', function(){    
-    food.innerText = '양식!'
+    axios("/us", {
+        method: "get",
+        })
+         .then((response) => {
+          
+          food.innerText = response.data.name;
+          })
+         .catch((error) => {
+           console.log(error);
+         }); 
 })
 
 add4.addEventListener('click', function(){    
-    food.innerText = '중식!'
+    axios("/ch", {
+        method: "get",
+        })
+         .then((response) => {
+          
+          food.innerText = response.data.name;
+          })
+         .catch((error) => {
+           console.log(error);
+         }); 
 })
+

@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import text
 
 views = Blueprint('views', __name__)
-engine = create_engine('sqlite:////ComputerNetwork_omechu-OMECHU_modified/ComputerNetwork_omechu-OMECHU_modified/website/database.db')
+engine = create_engine('sqlite:///c:/Users/Kim YR/OneDrive/바탕 화면/0608/ComputerNetwork_omechu-OMECHU_modified/ComputerNetwork_omechu-OMECHU_modified/website/database.db')
 Session = sessionmaker(bind=engine)
 
 @views.route('/', methods=['GET', 'POST'])
@@ -45,6 +45,7 @@ def komenu():
     komenu_keys = result.keys()
     komenu_dict = dict(zip(komenu_keys,random_komenu))
     ko_json_data = json.dumps(komenu_dict, ensure_ascii=False)
+    
     
     return ko_json_data
 
